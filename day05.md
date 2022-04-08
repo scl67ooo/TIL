@@ -35,3 +35,22 @@ doc/**/*.pdf
 
 clone은 다운로드, pull은 업데이트
 양 측의 버전이 다르면 충돌
+
+### branch
+git log --oneline --graph --all
+
+git branch feature
+
+git branch // 목록 조회
+
+git switch feature
+git switch master
+
+git branch -D feature
+
+git merge master // feature가 master를 병합
+git merge feature // master가 feature를 병합. 기능을 병합할 때 쓰는 정답.
+
+- Fast-Forward
+- Auto-merging
+- Conflict
