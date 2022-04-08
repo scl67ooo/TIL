@@ -7,3 +7,28 @@
 .gitignore에서 지정한게 적용되는 것은 .gitignore가 저장된 시점부터..인 것 같다.  
 그래서 .gitignore는 git init 시작하기 전에 만들어주세요  
 
+```.gitignore
+# : comments
+
+# no .a files
+*.a
+
+# but do track lib.a, even though you're ignoring .a files above
+!lib.a
+
+# only ignore the TODO file in the current directory, not subdir/TODO
+/TODO
+
+# ignore all files in the build/ directory
+build/
+
+# ignore doc/notes.txt, but not doc/server/arch.txt
+doc/*.txt
+
+# ignore all .pdf files in the doc/ directory
+doc/**/*.pdf
+```
+
+### git clone  
+솔직히 git clone이 폴더 만들어주는거는 까먹는다  
+얘는 폴더 만든다, git init 시작, repo 받아오기, git remote 등록해준다  
