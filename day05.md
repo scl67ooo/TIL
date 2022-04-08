@@ -29,6 +29,9 @@ doc/*.txt
 doc/**/*.pdf
 ```
 
-### git clone  
+### git clone, git pull
 솔직히 git clone이 폴더 만들어주는거는 까먹는다  
 얘는 폴더 만든다, git init 시작, repo 받아오기, git remote 등록해준다  
+
+clone은 다운로드, pull은 업데이트
+양 측의 버전이 다르면 충돌
